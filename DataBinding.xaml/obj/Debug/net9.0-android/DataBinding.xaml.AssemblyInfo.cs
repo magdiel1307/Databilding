@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataBinding.xaml")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cfa464c39503d963f026888eb1a1ed9a58124e48")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataBinding.xaml")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataBinding.xaml")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
