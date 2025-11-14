@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "models", "models", "{02EA68
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding.xaml", "DataBinding.xaml\DataBinding.xaml.csproj", "{BF93A963-65B3-449A-A59E-DBB8D8260753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Databaidin.coleccion", "Databaidin.coleccion\Databaidin.coleccion.csproj", "{8F5CED25-7F54-484E-9751-A0156B36BD89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding.coleccion", "Databaidin.coleccion\DataBinding.coleccion.csproj", "{8F5CED25-7F54-484E-9751-A0156B36BD89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

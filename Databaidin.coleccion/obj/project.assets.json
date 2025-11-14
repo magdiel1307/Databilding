@@ -26140,9 +26140,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\Databaidin.coleccion.csproj",
-      "projectName": "Databaidin.coleccion",
-      "projectPath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\Databaidin.coleccion.csproj",
+      "projectUniqueName": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\DataBinding.coleccion.csproj",
+      "projectName": "DataBinding.coleccion",
+      "projectPath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\DataBinding.coleccion.csproj",
       "packagesPath": "C:\\Users\\magdi\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\obj\\",
       "projectStyle": "PackageReference",

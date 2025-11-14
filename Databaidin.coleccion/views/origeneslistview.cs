@@ -1,6 +1,6 @@
-﻿using Databaidin.coleccion.models;
+﻿using DataBinding.coleccion.models;
 
-namespace Databaidin.coleccion.views
+namespace DataBinding.coleccion.views
 {
     internal class origeneslistview
     {

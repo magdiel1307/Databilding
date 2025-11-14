@@ -1,100 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DataBinding.coleccion.Views.MainPage"
-             Title="MainPage">
+             xmlns:views="clr-namespace:Databinding.Coleccion.Views"
+             xmlns:models ="clr-namespace:DataBinding.coleccion.models"
+             x:DataType="views:MainPage"
+             x:Class="Databinding.Coleccion.Views.MainPage"
+             Title="MainPage"
+             BackgroundColor="DimGrey">
     <Grid
-        RowDefinitions="Auto,*,Auto"
-         Padding="16">
-
+      RowDefinitions="Auto,*,Auto"
+        Padding="16">
         <Grid
-        ColumnDefinitions="*,Auto,Auto"
-        ColumnSpacing="4">
-
+            ColumnDefinitions="*,Auto,Auto"
+            ColumnSpacing="4">
             <Label
-            Text="Origenes del paquete:"
-            VerticalOptions="Center"/>
-
+                Text="OrigenDePaquete:"/>
             <Button
-            Grid.Column="1"
-            Text="+"
-            TextColor="Green"
-            BackgroundColor="White"
-            Margin="10"
-            FontSize="Small"
-            FontAttributes="Bold"
-            BorderColor="Gray"
-            BorderWidth="1"
-                Clicked="OnAgregarButtonCliked"/>
-
+               Grid.Column="1"
+               Text="+"
+               FontSize="24"
+               TextColor="Green"
+               FontAttributes="Bold"
+                Clicked="Button_Clicked"/>
             <Button
-            Grid.Column="2"
-            Text="X"
-            TextColor="Red"
-            BackgroundColor="White"
-            Margin="10"
-            FontSize="Small"
-            BorderColor="Gray"
-            BorderWidth="1"
-                Clicked="OnDeLeteButtonClicked"/>
+               Grid.Column="2"
+               Text="X"
+               FontSize="24"
+               TextColor="Red"
+                Clicked="Button_Clicked_1"/>
 
 
         </Grid>
-
         <CollectionView
-              Grid.Row="1"
-              BackgroundColor="Beige"
-              SelectionMode="Single"
-              EmptyView="Aún no se registran origenes de paquetes"
-              SelectionChanged="OrigenesListView_SelectionChanged"
-              x:Name="OrigenesListView">
+            Grid.Row="1"
+            BackgroundColor="Gray"
+            ItemsSource="{Binding Path = Origenes}"
+            x:Name="OrigenesListView"
+            SelectionMode="Single"
+            EmptyView="Aun no se registran origenes de paquetes"
+            SelectionChanged="OrigenesListView_SelectionChanged"
+            SelectedItem="{Binding Path=OrigenSeleccionado}">
+            <!--<ListView.ItemTemplate>
+                <DataTemplate>
+                    <Label
+                        Text="Empty"
+                        FontSize="16"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>-->
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate
+                    x:DataType="{x:Type models:OrigenDePaquete}">
+                    <Border
+                        Stroke="Blue"
+                        Padding="8">
+
+
+
+                        <Grid
+                        RowDefinitions="Auto,*"
+                        ColumnDefinitions="Auto,Auto">
+
+                            <CheckBox
+                            Grid.RowSpan="2"
+                            IsChecked="{Binding EstadoHabilitado}"
+                          />
+                            <Label
+                            Grid.Column="1"
+                            Text="{Binding Nombre}"
+                            />
+                            <Label
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Text="{Binding Origen}"/>
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
 
         </CollectionView>
 
 
 
 
+        <!--<ListView
+            Grid.Row="1"
+            BackgroundColor="Green">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Superman</x:String>
+                    <x:String>Batman</x:String>
+                    <x:String>Spiderman</x:String>
+                    <x:String>Thor</x:String>
 
+
+                </x:Array>
+            </ListView.ItemsSource>
+            
+            
+        </ListView>-->
         <Grid
-        Grid.Row="2"
-        RowDefinitions="Auto,Auto,Auto"
-        ColumnDefinitions="Auto,*,Auto"
-        RowSpacing="8"
-        ColumnSpacing="8">
+            Grid.Row="2"
+            RowDefinitions="Auto,Auto,Auto"
+            ColumnDefinitions="Auto,*,Auto"
+            RowSpacing="8"
+            ColumnSpacing="8">
 
             <Label
-            Text="Nombre:"
-            VerticalOptions="Center"/>
-
+                Text="Nombre:"
+                VerticalOptions="Center"
+                />
             <Entry
-            Grid.Column="1"
-                  BackgroundColor="LightGray"
-                x:Name="NombreEntry"/>
-
+                Grid.Column="1"
+                BackgroundColor="Gray"
+                Text="{Binding NombreDelOrigen}"
+                />
             <Label
-            Text="Origen:"
-            Grid.Row="1"
-            VerticalOptions="Center"/>
-
+                Text="Origen:"
+                Grid.Row="1"
+                />
             <Entry
-            Grid.Column="1"
-            Grid.Row="1"
-                BackgroundColor="LightGray"
-                x:Name="OrigenEntry"/>
-
+                 Grid.Column="1"
+                Grid.Row="1"
+                Text="{Binding RutaDelOrigen}"
+                BackgroundColor="Gray"
+                />
             <Button
-            Text="Actualizar"
-            Grid.Row="1"
-            Grid.Column="2"
-                TextColor="Black"
-            BackgroundColor="White"
-                BorderColor="LightGray"
-                BorderWidth="1"
-                Clicked="OnActualizarButton_Cliked"/>
-
+                    Text="Actualizar"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    BackgroundColor="Gray"
+                    TextColor="White"
+                    Clicked="OnActualizarbutton"
+                />
 
         </Grid>
 
     </Grid>
-
-
 </ContentPage>

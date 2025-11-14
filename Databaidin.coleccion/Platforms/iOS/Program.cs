@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Databaidin.coleccion
+namespace DataBinding.coleccion
 {
     public class Program
     {

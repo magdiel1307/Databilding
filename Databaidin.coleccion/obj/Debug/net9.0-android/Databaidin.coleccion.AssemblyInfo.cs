@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Databaidin.coleccion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cfa464c39503d963f026888eb1a1ed9a58124e48")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+66739e8688433fc1afe260b085198887f96ea4fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Databaidin.coleccion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Databaidin.coleccion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tCWSVxcwvOQ=",
+  "dgSpecHash": "+IerQtkVsn4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\Databaidin.coleccion.csproj",
+  "projectFilePath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\DataBinding.coleccion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\magdi\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\magdi\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.5\\microsoft.extensions.configuration.9.0.5.nupkg.sha512",
@@ -125,9 +125,9 @@
       "code": "NU1900",
       "level": "Warning",
       "message": "Error al obtener los datos de vulnerabilidad del paquete: No se puede cargar el índice de servicio del origen https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\Databaidin.coleccion.csproj",
+      "projectPath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\DataBinding.coleccion.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\Databaidin.coleccion.csproj",
+      "filePath": "C:\\Users\\magdi\\source\\repos\\Databinding\\Databaidin.coleccion\\DataBinding.coleccion.csproj",
       "targetGraphs": []
     }
   ]

@@ -1,4 +1,4 @@
-﻿namespace Databaidin.coleccion
+﻿namespace DataBinding.coleccion
 {
     public partial class AppShell : Shell
     {

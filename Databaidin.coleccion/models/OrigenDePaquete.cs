@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Databaidin.coleccion.models
+namespace DataBinding.coleccion.models
 
 {
-    class OrigenDePaquete
+    public class OrigenDePaquete : INotifyPropertyChanged
     {
         
 
@@ -17,7 +18,8 @@ namespace Databaidin.coleccion.models
 
         public override string ToString()
         {
-            return $" {Nombre}-({Origen}) ";
+            return $" {Nombre}-({Origen}) "
+                
         }
     }
 }
